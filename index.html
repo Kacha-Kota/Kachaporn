@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Landing Page</title>
+  <style>
+    /* ตั้งค่าพื้นฐาน */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    body, html {
+      height: 100%;
+      background: linear-gradient(135deg, #66c2ff, #99e6e6);
+      color: #333;
+    }
+
+    /* ส่วน container หลัก */
+    .container {
+      text-align: center;
+      max-width: 900px;
+      padding: 30px;
+      border-radius: 10px;
+      background: rgb(255, 255, 255);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+    }
+
+    /* สไตล์หัวข้อ */
+    h1 {
+      font-size: 2.5em;
+      color: #006699;
+      margin-bottom: 10px;
+    }
+
+    /* คำอธิบายสั้น ๆ */
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    /* ปุ่ม */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1em;
+      color: #fff;
+      background: #006699;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #005580;
+      transform: translateY(-3px);
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* เพิ่มรูปไอคอน */
+    .icon {
+      font-size: 5em;
+      color: #00b3b3;
+      margin-bottom: 20px;
+    }
+
+    /* สไตล์เมนูนำทาง */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background: #006699;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background: #005580;
+      border-radius: 5px;
+    }
+
+    /* ส่วนบริการ */
+    .service-section {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      gap: 20px;
+    }
+
+    .service {
+      background-color: #f1f1f1;
+      padding: 15px;
+      border-radius: 10px;
+      flex-basis: 80%;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .service h3 {
+      color: #006699;
+      margin-bottom: 10px;
+    }
+
+    /* ทีมแพทย์ */
+    .team-section h2 {
+      margin-top: 30px;
+    }
+    .team {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .doctor {
+      text-align: center;
+    }
+
+    .doctor img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    /* ส่วนติดต่อ */
+    .contact-section {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .contact-section h2 {
+      color: #006699;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- เมนูนำทาง -->
+  <div class="navbar">
+    <a href="#home">Home Page</a>
+    <a href="#services">Calculation</a>
+    <a href="#team">Biomedical Engineer</a>
+    <a href="#contact">Contract</a>
+  </div>
+
+  <!-- ส่วน container ของหน้าเว็บปก -->
+  <div id="home" class="container">
+    <div class="icon">🏥</div> <!-- ใช้ไอคอนทางการแพทย์ -->
+    <h1>Uncertainty Quantification Software For Medical Devices</h1>
+    <p><b>Biomedical Engineering, Rangsit University</b></p>
+    <a href="#" class="btn" onclick="startUsing()">เริ่มต้นใช้งาน</a>
+  </div>
+
+  <!-- ส่วนบริการ -->
+   <center>
+  <div id="services" class="container service-section">
+    <div class="service">
+        <div class="icon">💉</div>
+        <h style="color: #006699;">Uncertainty in medical devices refers to the range of values that could reasonably be attributed to a measurement or calculation made by the device. It's a measure of the doubt or imprecision associated with the device's results
+        </div></center></h>
+
+  <!-- ทีมแพทย์ -->
+
+  <div id="team" class="container team-section">
+   <div class="icon">⚙️</div>
+   <h2 style="color: #006699;">Biomedical Engineering</h2>
+    <p><div class="team"></p>
+      <div class="doctor">
+        <p>Thanatchapon Samruamjit</p>
+      </div>
+
+      <div class="doctor">
+        <p>Yanipat Waratthanachat</p>
+      </div>
+
+      <div class="doctor">
+        <p>Manatsanan Khongtan</p>
+      </div>
+
+      <div class="doctor">
+        <p>Kachaporn Kotasing</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ส่วนติดต่อ -->
+  <div id="contact" class="container contact-section">
+    <b><p><h2 style="color: #006699;">Contract</h2></p></b>
+    <h style="color: #006699;">Address: Rangsit University, Biomedical Engineering, Building 4</p>
+    <h style="color: #006699;">Email: Kachaporn.K65@rsu.ac.th</p>
+</div></center></h>
+
+  <script>
+    // ฟังก์ชันที่ทำงานเมื่อคลิกปุ่ม
+    function startUsing() {
+      window.location.href = 'nextpage.html';  // แทนที่ 'nextpage.html' ด้วย URL ที่ต้องการ
+    }
+  </script>
+</body>
+</html>
